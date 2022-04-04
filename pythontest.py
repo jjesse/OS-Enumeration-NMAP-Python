@@ -107,11 +107,11 @@ def windowsCommands():
  os.system(command3)
 
 #######################################################################
-#Netinput = input('What is the network ID of the network you want to scan?(ie. 192.168.1.0): ')
-#cidrinput = input('What is the CIDR of the network you want to scan?(ie. /24) hit enter if single host: ')
-ip_addr = input('What is the IP address of the machine you are scanning from?')
-linuxuser = input('What is the Linux user that will be used for enumeration?: ')
-linuxpassword = input('What is the Linux password used to authenticate the user above?: ')
+#Netinput = input('What is the network ID of the network you want to scan? (ie. 192.168.1.0):  ')
+#cidrinput = input('What is the CIDR of the network you want to scan? (ie. /24) hit enter if single host:  ')
+ip_addr = input('What is the IP address of the machine you are scanning from?' )
+linuxuser = input('What is the Linux user that will be used for enumeration?: ' )
+linuxpassword = input('What is the Linux password used to authenticate the user above?:' )
 windowsuser = input('What is the Windows user that will be used for enumeration? Domain user should look like; domain.com\\user: ')
 windowspassword = input('What is the Windows password used to authenticate the user above?: ')
 #netpluscidr = (Netinput + cidrinput)

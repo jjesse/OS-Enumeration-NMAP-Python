@@ -1,0 +1,11 @@
+cd /home/
+hostname="$(hostname)"
+file="enum${hostname}.txt"
+hostname >> $file 2>&1
+ifconfig -a >> $file 2>&1
+cat /etc/passwd >> $file 2>&1
+cat /etc/hosts >> $file 2>&1
+service --status-all >> $file 2>&1
+netstat -plant >> $file 2>&1
+cat /etc/group >> $file 2>&1
+cat /etc/os-release >> $file 2>&1
